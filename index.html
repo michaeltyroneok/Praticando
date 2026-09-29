@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sistema de notas</title>
+    
+</head>
+
+<body>
+
+    <h1>Sistema de médias dos alunos do Carlos Chagas</h1>
+
+   <table>
+    <tr>
+        <th>Aluno</th>
+        <th>Nota 1</th>
+        <th>Nota 2</th>
+        <th>Média</th>
+        <th>Situação do aluno</th>
+    </tr>
+    
+    <tr>
+        <td>
+            <input type="text"  id="nomeAluno" placeholder="Digite o nome do aluno">
+        </td>
+
+        <td>
+            <input type="text" id="nota1" placeholder="Digite a 1° nota do aluno">
+        </td>
+
+        <td>
+             <input type="text" id="nota2" placeholder="Digite a 2° nota do aluno">
+        </td>
+
+        <td>
+            <input type="text" id="media" readonly>
+        </td>
+
+        <td>
+            <input type="text" id="situacao" readonly>
+        </td>
+        
+
+    </tr>
+</table>
+<button onclick="calcular()">Calcular</button>
+<button type="button" id="limpar">Limpar Campos</button>
+<script src="script.js"></script>
+</body>
+</html>
